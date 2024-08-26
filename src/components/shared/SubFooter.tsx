@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "../ui/Container";
 import Link from "next/link";
 
 const SubFooter = () => {
