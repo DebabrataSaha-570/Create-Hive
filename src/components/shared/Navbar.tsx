@@ -51,6 +51,31 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
+        {/* mobile navbar  */}
+        <div
+          className={`${
+            !navOpen
+              ? "hidden "
+              : "flex flex-col items-start mt-6 space-y-5 text-normal text-lg font-normal "
+          } `}
+        >
+          <p onClick={() => setNavOpen(!navOpen)} className="">
+            <Link href="/company">Company</Link>
+          </p>
+          <p onClick={() => setNavOpen(!navOpen)}>
+            <Link href="/solutions">Solutions</Link>
+          </p>
+          <p onClick={() => setNavOpen(!navOpen)}>
+            <Link href="/pricing">Pricing</Link>
+          </p>
+          <p onClick={() => setNavOpen(!navOpen)}>
+            <Link href="/resources">Resources</Link>
+          </p>
+          <p onClick={() => setNavOpen(!navOpen)}>
+            <Link href="/contact">Contact</Link>
+          </p>
+        </div>
       </Container>
     </nav>
   );
