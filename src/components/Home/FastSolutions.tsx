@@ -27,7 +27,7 @@ const FastSolutions = () => {
               {FastSolutionsData.map((data, index) => (
                 <div
                   key={index}
-                  className="bg-white px-5 py-12 space-y-3  rounded-md"
+                  className="bg-white px-7 py-12 space-y-3  rounded-md"
                 >
                   <Image
                     src={data.image}
