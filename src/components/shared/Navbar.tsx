@@ -17,7 +17,9 @@ const Navbar = () => {
   });
   return (
     <nav
-      className={`py-5 px-7  sticky top-0 ${bg ? "bg-white" : "bg-primary"} `}
+      className={`py-5 px-7 z-40  sticky top-0 ${
+        bg ? "bg-white" : "bg-primary"
+      } `}
     >
       <Container>
         <div className="flex justify-between items-center gap-3">

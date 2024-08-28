@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
@@ -5,15 +6,18 @@ import userImage1 from "../../../public/assests/user-1.jpg";
 import userImage2 from "../../../public/assests/user-2.jpg";
 import userImage3 from "../../../public/assests/user-3.jpg";
 import Image from "next/image";
-import Navbar from "../shared/Navbar";
+
+import dynamic from "next/dynamic";
+import animation1 from "../../../public/assests/animation-1.json";
 
 const Hero = () => {
+  const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
   return (
-    <section className="h-[80vh] px-7 flex items-center  bg-primary mb-5">
+    <section className=" px-7 flex items-center  bg-primary mb-5">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* left part  */}
-          <div className="">
+          <div className=" flex flex-col justify-center items-start">
             <p className="text-secondary text-lg md:text-xl font-medium mb-3 md:mb-5">
               Start earning more traffic
             </p>
@@ -60,7 +64,9 @@ const Hero = () => {
           </div>
 
           {/* right side  */}
-          <div></div>
+          <div className="flex justify-center items-center">
+            <Lottie animationData={animation1}></Lottie>
+          </div>
         </div>
       </Container>
     </section>
