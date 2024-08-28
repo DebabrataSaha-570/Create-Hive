@@ -1,3 +1,10 @@
+import Hero from "@/components/Home/Hero";
+import Container from "@/components/ui/Container";
+
 export default function Home() {
-  return <main className="h-screen">{/* <h2>Welcomee to the app</h2> */}</main>;
+  return (
+    <main className="">
+      <Hero></Hero>
+    </main>
+  );
 }
