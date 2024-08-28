@@ -13,7 +13,7 @@ import animation1 from "../../../public/assests/animation-1.json";
 const Hero = () => {
   const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
   return (
-    <section className=" px-7 flex items-center  bg-primary mb-5">
+    <section className=" px-7 flex items-center  bg-primary ">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* left part  */}
